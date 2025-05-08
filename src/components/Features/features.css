@@ -1,0 +1,79 @@
+.features-page {
+    padding: 60px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .features-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Goal Setting Form Styles */
+  .goal-setting {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .goal-setting h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .goal-setting input,
+  .goal-setting textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .goal-setting button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .goal-setting button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Goals List Styles */
+  .goals-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .goals-list li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goals-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .goals-list p {
+    color: #666;
+  }
+  
+  .goals-list small {
+    color: #999;
+    font-size: 0.9rem;
+  }
