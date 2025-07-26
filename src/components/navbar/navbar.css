@@ -36,7 +36,6 @@
     color: #ffcc00;
   }
   
-  /* Responsive */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;

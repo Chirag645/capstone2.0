@@ -1,79 +1,136 @@
 .features-page {
-    padding: 60px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .features-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
-  /* Goal Setting Form Styles */
-  .goal-setting {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  
-  .goal-setting h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  
-  .goal-setting input,
-  .goal-setting textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-  
-  .goal-setting button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .goal-setting button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Goals List Styles */
-  .goals-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .goals-list li {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .goals-list h3 {
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .goals-list p {
-    color: #666;
-  }
-  
-  .goals-list small {
-    color: #999;
-    font-size: 0.9rem;
-  }
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.features-title {
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.features-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.goal-setting {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.goal-setting h2 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.goal-setting input,
+.goal-setting textarea,
+.goal-setting button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.goal-setting button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.goal-setting button:hover {
+  background-color: #005fa3;
+}
+
+.goals-list h2 {
+  margin-bottom: 1rem;
+  color: #0077cc;
+}
+
+.goals-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-list li {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 119, 204, 0.1);
+}
+
+.progress-wrapper {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffcc00;
+  width: 40%; /* static, for now */
+  transition: width 0.4s ease-in-out;
+}
+
+/* Pomodoro Timer Styles */
+.pomodoro-timer-fixed {
+  width: 240px;
+  background-color: #ffffff;
+  border: 2px solid #0077cc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 100px;
+  right: 0;
+  height: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.15);
+  text-align: center;
+}
+
+.pomodoro-timer-fixed h2 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.timer-buttons button {
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer-buttons button:hover {
+  background-color: #005fa3;
+}
