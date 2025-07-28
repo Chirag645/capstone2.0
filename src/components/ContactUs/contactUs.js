@@ -1,68 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contactUs.css';
 
 function ContactUs() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Message sent:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
-  };
-
   return (
-    <div className="contact-container">
-      <h1>Contact <span className="highlight">Us</span></h1>
-      <p>Got a question, suggestion, or just want to say hello? We'd love to hear from you.</p>
+    <div className="contact-page">
+      <h1 className="contact-title">Get in Touch</h1>
+      <p className="contact-subtitle">We’d love to hear from you. Fill out the form below.</p>
 
-      {!submitted ? (
-        <form onSubmit={handleSubmit} className="contact-form">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+      <div className="contact-container">
+        <form className="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+          <label>
+            Email
+            <input type="email" placeholder="Your email" required />
+          </label>
 
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
+          <label>
+            Message
+            <textarea placeholder="Your message" rows="5" required></textarea>
+          </label>
 
           <button type="submit">Send Message</button>
         </form>
-      ) : (
-        <div className="thank-you">
-          <h2>Thank you!</h2>
-          <p>We will get back to you soon.</p>
+
+        <div className="contact-info">
+          <h3>Contact Info</h3>
+          <p><strong>Email:</strong> hello@donedesk.com</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Address:</strong> Newton School of Technology, India</p>
         </div>
-      )}
+      </div>
     </div>
   );
 }

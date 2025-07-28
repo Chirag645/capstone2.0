@@ -82,4 +82,19 @@
     color: white;
     margin-top: 40px;
   }
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+    }
   
+    .pomodoro-timer-fixed {
+      position: static;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .goal-setting, .goals-list {
+      width: 100%;
+    }
+  }
+    

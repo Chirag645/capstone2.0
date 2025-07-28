@@ -1,78 +1,97 @@
-.contact-container {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 40px 20px;
+.contact-page {
+    padding: 2rem;
     background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 12px;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    color: #333;
   }
   
-  .contact-container h1 {
+  .contact-title {
     font-size: 2.5rem;
     color: #0077cc;
-    margin-bottom: 10px;
+    text-align: center;
   }
   
-  .contact-container .highlight {
-    color: #ffcc00;
-  }
-  
-  .contact-container p {
+  .contact-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
     font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
   }
   
   .contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
   }
   
   .contact-form input,
   .contact-form textarea {
-    padding: 12px 15px;
-    font-size: 1rem;
-    border: 1.5px solid #0077cc;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #ffcc00;
-    box-shadow: 0 0 8px rgba(255, 204, 0, 0.2);
+    margin-top: 0.5rem;
+    font-size: 1rem;
   }
   
   .contact-form button {
-    padding: 12px;
-    font-size: 1rem;
     background-color: #0077cc;
     color: white;
+    padding: 0.75rem;
     border: none;
     border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.2s;
   }
   
   .contact-form button:hover {
     background-color: #005fa3;
   }
   
-  .thank-you {
-    padding: 40px 20px;
+  .contact-info {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ffcc00;
+    padding: 1.5rem;
+    border-radius: 8px;
   }
   
-  .thank-you h2 {
-    font-size: 2rem;
+  .contact-info h3 {
     color: #0077cc;
+    margin-bottom: 1rem;
   }
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+    }
   
-  .thank-you p {
-    font-size: 1.1rem;
-    color: #555;
+    .pomodoro-timer-fixed {
+      position: static;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .goal-setting, .goals-list {
+      width: 100%;
+    }
   }
-  
+    
